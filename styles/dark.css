@@ -1,0 +1,150 @@
+/* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+  -webkit-appearance: none;
+}
+
+body {
+  user-select: none;
+}
+
+::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 19, 19);
+  transition: 0.8s all;
+}
+
+h1 {
+  margin-bottom: 1.5%;
+  color: #fff;
+  font-weight: normal;
+}
+
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 350px;
+  display: flex;
+  border-radius: 2.5rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+  border-color: #00b3b3;
+  /* Change the border color on hover */
+  box-shadow: 0 0 40px #00b3b3;
+  /* Increase glow effect on hover */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+
+}
+
+input {
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: rgb(47, 51, 50);
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  margin: 0.2em;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 4px;
+}
+
+input[type="text"] {
+  background-color: rgb(47, 51, 50);
+  width: 222.5px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(101, 101, 101);
+  color: #fff;
+}
+
+#clear-button {
+  color: #fff;
+  background-color: rgb(255, 42, 42);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#github-icon {
+  margin-right: 10px;
+}
+
+.theme-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.social {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  justify-content: center;
+  transition: 0.9s ease;
+}
+
+.social a {
+  color: white;
+  font-size: 1.7em;
+  margin-right: 90px;
+  transition: 0.4s ease;
+}
+.social a:hover{
+  transform: scale(1.3);
+}
+
+@media (max-width :1040px){
+  .social a {
+    color: white;
+    font-size: 1.7em;
+    margin-right: 50px;
+    transition: 0.4s ease;
+  }
+
+  .social{
+    padding-right: 45px;
+  }
+}
